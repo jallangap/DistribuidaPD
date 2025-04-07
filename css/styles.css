@@ -1,0 +1,45 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.buscador input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscador button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 50px;
+    color: #777;
+}

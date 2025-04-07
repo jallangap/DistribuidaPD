@@ -1,1 +1,27 @@
-a
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Básico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Buscador</h1>
+    </header>
+
+    <main>
+        <section class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Buscador</p>
+    </footer>
+
+</body>
+</html>
