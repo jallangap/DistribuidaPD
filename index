@@ -9,19 +9,41 @@
 <body>
 
     <header>
-        <h1>Hola que hace</h1>
+        <h1>Buscar</h1>
     </header>
 
     <main>
         <section class="buscador">
-            <input type="text" placeholder="Buscar...">
-            <button>Buscar</button>
+            <input type="text" id="pokemonInput" placeholder="Ingresa el Puchamon...">
+            <button onclick="buscarPokemon()">Buscar</button>
         </section>
+
+        <div id="resultado"></div>
     </main>
 
     <footer>
         <p>Universidad Central del Ecuador</p>
     </footer>
+
+    <script>
+        async function buscarPokemon() {
+            const nombre = document.getElementById('pokemonInput').value.toLowerCase();
+            const resultado = document.getElementById('resultado');
+
+            try {
+                const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
+                if (!res.ok) throw new Error('No encontrado');
+                const data = await res.json();
+
+                resultado.innerHTML = `
+                    <h2>${data.name.toUpperCase()}</h2>
+                    <img src="${data.sprites.front_default}" alt="${data.name}">
+                `;
+            } catch (error) {
+                resultado.innerHTML = `<p>Pokémon no encontrado</p>`;
+            }
+        }
+    </script>
 
 </body>
 </html>

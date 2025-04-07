@@ -15,7 +15,7 @@ body {
 
 header h1 {
     margin-bottom: 20px;
-    color: #4CAF50;
+    color: #000000;
 }
 
 .buscador input {
@@ -28,7 +28,7 @@ header h1 {
 .buscador button {
     padding: 10px 20px;
     margin-left: 10px;
-    background-color: #4CAF50;
+    background-color: #af4c4c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,7 +36,7 @@ header h1 {
 }
 
 .buscador button:hover {
-    background-color: #45a049;
+    background-color: #4562a0;
 }
 
 footer {
