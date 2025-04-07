@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador Básico</title>
+    <title>Prueba de diagnostico</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Mi Buscador</h1>
+        <h1>Hola que hace</h1>
     </header>
 
     <main>
@@ -20,7 +20,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Mi Buscador</p>
+        <p>Universidad Central del Ecuador</p>
     </footer>
 
 </body>
